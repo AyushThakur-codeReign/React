@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import ProfileCard from './Components/ProfileCard'
+import State from './Components/State';
+
 function App() {
   const [color, setColor] = useState("white")
   const teamMembers = [
@@ -30,9 +32,12 @@ function App() {
       name={member.name}
       role={member.role}
       image={member.image}
+       
       />
     ))}
+
     </div>
+   
       
         <div className='fixed w-full flex flex-wrap  bg-black gap-3 justify-center rounded-4xl bottom-12' >
           <div className="p-4 m-4">
@@ -52,7 +57,8 @@ function App() {
           </div>
         </div>
         
-      </div>
+       </div>
+      
     </>
   )
 }

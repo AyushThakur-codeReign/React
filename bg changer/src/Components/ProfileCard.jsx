@@ -1,4 +1,5 @@
 import React from 'react'
+import State from './State'
 function ProfileCard({name,role,image}) {
   return (
     <div>
@@ -6,7 +7,9 @@ function ProfileCard({name,role,image}) {
             <img src={image} className='rounded-md w-60 h-60  '></img>
         <h2 className='text-center'>{name}</h2>
         <p>Hello My Name is {name}.I am {role} </p>
+         <State/>
       </div>
+     
     </div>
   )
 }
