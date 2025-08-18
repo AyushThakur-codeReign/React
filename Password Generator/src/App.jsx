@@ -60,7 +60,7 @@ useEffect(()=>{
         </div>
         
       </div>
-      <List/>
+      
      
     </>
   );
